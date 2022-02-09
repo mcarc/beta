@@ -1,0 +1,17 @@
+.md-typeset .text-align-center {
+    text-align: center;
+}
+
+.md-typeset .weight-lighter {
+    font-weight: lighter;
+}
+
+.md-typeset .element-align-center {
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    /* padding: auto; */
+    width: 90%;
+    /* display: flex; */
+    /* justify-content: center; */
+}

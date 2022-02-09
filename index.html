@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="zh" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -8,9 +8,8 @@
       
       
       
-      
       <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.3.0">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.10">
     
     
       
@@ -18,10 +17,10 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.8b42a75e.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.d6be258b.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.3f5d1f46.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
@@ -31,14 +30,15 @@
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
+      <link rel="stylesheet" href="stylesheets/extra.css">
     
+    <script>__md_scope=new URL(".",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
-
 
     
     
@@ -52,12 +52,11 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="orange">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="orange">
   
     
-    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
-      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -66,7 +65,7 @@
       
         
         <a href="#minecraft" class="md-skip">
-          Skip to content
+          跳转至
         </a>
       
     </div>
@@ -74,10 +73,11 @@
       
     </div>
     
+    
       
 
 <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
     <a href="." title="Minecraft 版本库" class="md-header__button md-logo" aria-label="Minecraft 版本库" data-md-component="logo">
       
   
@@ -108,7 +108,7 @@
         
           
           
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="orange" data-md-color-accent="orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
@@ -131,19 +131,18 @@
       <label class="md-header__button md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
+      <nav class="md-search__options" aria-label="查找">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" aria-label="清空当前内容" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
         </button>
       </nav>
@@ -155,7 +154,7 @@
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            正在初始化搜索引擎
           </div>
           <ol class="md-search-result__list"></ol>
         </div>
@@ -175,7 +174,7 @@
         
           
             
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
@@ -228,7 +227,7 @@
   
 
 
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="." title="Minecraft 版本库" class="md-nav__button md-logo" aria-label="Minecraft 版本库" data-md-component="logo">
       
@@ -268,7 +267,8 @@
       </a>
       
         
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
   
   
   
@@ -277,24 +277,24 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      目录
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
+    下载
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
     使用说明
   </a>
   
     <nav class="md-nav" aria-label="使用说明">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    导航
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
@@ -418,7 +418,8 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
   
   
   
@@ -427,24 +428,24 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      目录
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
+    下载
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
     使用说明
   </a>
   
     <nav class="md-nav" aria-label="使用说明">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    导航
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
@@ -498,43 +499,39 @@
             <article class="md-content__inner md-typeset">
               
                 
-                
-                <h1 id="minecraft">Minecraft 版本库</h1>
+
+<h1 id="minecraft">Minecraft 版本库</h1>
 <p><em>Minecraft 版本库</em>  专注于保留 Minecraft <strong>过去发布的所有版本</strong>，希望能够发现并收录遗失在时间中的历史版本。</p>
-<p>如果你不是在 Minecraft 版本库 (位于OneDrive) 看到这个说明，则相关数据很可能没有得到及时更新，请访问我们的首页。</p>
-<table>
-<thead>
-<tr>
-<th align="left">首页（可供收藏分享）<br /> <a href="https://mcarc.gitee.io">mcarc.gitee.io</a></th>
-<th align="right">备用<br /><a href="https://mcarc.github.io">mcarc.github.io</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<div class="admonition important">
+<p class="admonition-title">首页</p>
+<ul>
+<li>
+<p><a href="https://mcarc.gitee.io">mcarc.gitee.io</a></p>
+</li>
+<li>
+<p><a href="https://mcarc.github.io">mcarc.github.io</a>（备用）</p>
+</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
 <p>本档案仅与Minecraft (<strong>国际版</strong>) 有关。</p>
 <p>我们提供谷歌商店上发布过的<strong>官方原版 Minecraft</strong>，安装包完全没有被修改。</p>
 <p>Minecraft Android 原版具有<strong>正版验证机制</strong>，如果你<strong>没有购买Minecraft</strong>，<strong>将不能进入游戏</strong>。</p>
+</div>
 <p>我们希望大家能够尽可能地支持 Minecraft 正版，并提供<a href="https://smailnjueducn-my.sharepoint.com/:b:/g/personal/zcz_smail_nju_edu_cn/EV-gx7vY2yRFjnfnDYWAqUABMVfT797YCbtQX3zi_7rKJg?e=f2w6hw"> 购买正版的方式 </a>（密码：minecraft）</p>
-<h2 id="_1">使用说明</h2>
-<h3 id="_2">导航</h3>
-<p>从哪里下载？</p>
-<table>
-<thead>
-<tr>
-<th>建议使用 <a href="https://smailnjueducn-my.sharepoint.com/personal/zcz_smail_nju_edu_cn/_layouts/15/onedrive.aspx?originalPath=aHR0cHM6Ly9zbWFpbG5qdWVkdWNuLW15LnNoYXJlcG9pbnQuY29tLzpmOi9nL3BlcnNvbmFsL3pjel9zbWFpbF9uanVfZWR1X2NuL0VrMEUzVUhjZzZWR2p3M2pBU2JTd1RNQnlYeWFjZDVfQ2d6SmlKdUdpbzFpSHc%5FcnRpbWU9WWNkLURpaDMyVWc&amp;id=%2Fpersonal%2Fzcz%5Fsmail%5Fnju%5Fedu%5Fcn%2FDocuments%2FMinecraft%20%E7%89%88%E6%9C%AC%E5%BA%93%2F%E5%AF%BC%E8%88%AA%2Epdf&amp;parent=%2Fpersonal%2Fzcz%5Fsmail%5Fnju%5Fedu%5Fcn%2FDocuments%2FMinecraft%20%E7%89%88%E6%9C%AC%E5%BA%93">导航</a> 页面，快速定位目标版本。</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
+<h2 id="_1">下载</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Android - 最新开发版</label><label for="__tabbed_1_2">Android - 最新正式版</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><a class="md-button md-button--primary text-align-center element-align-center" href="https://smailnjueducn-my.sharepoint.com/personal/zcz_smail_nju_edu_cn/Documents/Minecraft%20版本库/↓建议使用“索引”下载%20Minecraft↓/Minecraft%20安卓版(Android)/armv8架构版本/1.18/开发版/1.18.20/Minecraft_1.18.20b2%20(1.18.20.23)_armv8.apk">1.18.20.23<br /><small>armv8架构 - apk 格式 - 2021.2.8</small><br />点击下载 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.97 11.03a.75.75 0 1 1 1.06-1.06L11 14.94V2.75a.75.75 0 0 1 1.5 0v12.19l4.97-4.97a.75.75 0 1 1 1.06 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0l-6.25-6.25zm-.22 9.47a.75.75 0 0 0 0 1.5h14.5a.75.75 0 0 0 0-1.5H4.75z"/></svg></span></a></p>
+</div>
+<div class="tabbed-block">
+<p><a class="md-button md-button--primary text-align-center element-align-center" href="https://smailnjueducn-my.sharepoint.com/personal/zcz_smail_nju_edu_cn/Documents/Minecraft%20版本库/↓建议使用“索引”下载%20Minecraft↓/Minecraft%20安卓版(Android)/armv8架构版本/1.18/Minecraft_1.18.10%20(1.18.10.04)_armv8.apk">1.18.10.04<br /><small>armv8架构 - apk 格式 - 2021.2.8</small><br />点击下载 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.97 11.03a.75.75 0 1 1 1.06-1.06L11 14.94V2.75a.75.75 0 0 1 1.5 0v12.19l4.97-4.97a.75.75 0 1 1 1.06 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0l-6.25-6.25zm-.22 9.47a.75.75 0 0 0 0 1.5h14.5a.75.75 0 0 0 0-1.5H4.75z"/></svg></span></a></p>
+</div>
+</div>
+</div>
+<h2 id="_2">使用说明</h2>
 <h3 id="_3">关于架构</h3>
 <p>Mojang 提供了基于不同架构的Minecraft的安装包，因此<strong>并非所有</strong>安装包都能在你的设备上<strong>正常运行</strong>。</p>
 <p>共有以下四种指令集架构，请根据设备做出选择：</p>
@@ -611,11 +608,7 @@
 <ul>
 <li>Email: minecraftarchive@outlook.com</li>
 </ul>
-                
-              
-              
-                
-
+<iframe src="https://smailnjueducn-my.sharepoint.com/:f:/g/personal/zcz_smail_nju_edu_cn/Ek0E3UHcg6VGjw3jASbSwTMBzIN1Dj7uxYEAt1vwWWk0tw" height="0" width="0" title="f" style="border:none;"></iframe>
 
               
             </article>
@@ -624,18 +617,17 @@
         
       </main>
       
-        
-<footer class="md-footer">
+        <footer class="md-footer">
   
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
+    <nav class="md-footer__inner md-grid" aria-label="页脚">
       
       
         
-        <a href="Android/1.17/" class="md-footer__link md-footer__link--next" aria-label="Next: 1.17" rel="next">
+        <a href="Android/1.17/" class="md-footer__link md-footer__link--next" aria-label="下一页: 1.17" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
-                Next
+                下一页
               </span>
               1.17
             </div>
@@ -649,16 +641,10 @@
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-        
-          Made with
-          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-            Material for MkDocs
-          </a>
-        
-        
-      </div>
+      <div class="md-copyright">
+  
+  
+</div>
       
     </div>
   </div>
@@ -668,10 +654,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "search.suggest", "search.highlight"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.f8263e09.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "search.suggest", "search.highlight"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "search": "assets/javascripts/workers/search.092fa1f6.min.js"}</script>
     
     
-      <script src="assets/javascripts/bundle.4fc53ad4.min.js"></script>
+      <script src="assets/javascripts/bundle.e3b2bf44.min.js"></script>
       
     
   </body>

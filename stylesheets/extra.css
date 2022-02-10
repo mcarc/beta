@@ -1,0 +1,42 @@
+.md-typeset .text-align-center {
+    text-align: center;
+}
+
+.md-typeset .weight-lighter {
+    font-weight: lighter;
+}
+
+.md-typeset .element-align-center {
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    /* padding: auto; */
+    width: 90%;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.md-typeset .neumorphism {
+    border-radius: 43px;
+    background: #ffffff;
+    box-shadow: -20px 20px 40px #d6d6d6, 20px -20px 40px #ffffff;
+    /* box-shadow: -20px 20px 40px #d67a00, 20px -20px 40px #ffa800; */
+    border-width: 0;
+}
+
+.android {
+    color: #3DDC84;
+}
+
+.sprite {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    image-rendering: -webkit-optimize-contrast;
+    background-image: url(https://static.wikia.nocookie.net/minecraft_zh_gamepedia/images/5/54/EnvCSS.png/revision/latest?cb=20211003071254&format=original);
+    background-position: -0px -0px;
+}
